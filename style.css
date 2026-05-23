@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: #f4f4f4;
+    color: #333;
+}
+
+.navbar{
+    background: #24292e;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li{
+    margin-left: 20px;
+}
+
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.hero{
+    text-align: center;
+    padding: 80px 20px;
+    background: white;
+}
+
+.hero h2{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    margin: 40px 20px;
+}
+
+.card{
+    background: white;
+    padding: 30px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+footer{
+    background: #24292e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* التجاوب مع الشاشات (Bonus) */
+@media(max-width: 768px){
+    .navbar{
+        flex-direction: column;
+    }
+    .hero h2{
+        font-size: 28px;
+    }
+}
